@@ -1,0 +1,32 @@
+spring:
+  cloud:
+    function:
+      scan:
+        packages: com.juku.serverless.functions
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://yamauram-postgre-proxy.proxy-cgkye2qecvdy.ap-northeast-1.rds.amazonaws.com:5432/postgres
+    username: postgres
+    password: password
+cloud:
+  aws:
+    stack:
+      # CloudFormationのstack名を自動収集しない
+      auto: false
+    region:
+      static: ap-northeast-1
+    credentials:
+      useDefaultAwsCredentialsChain: true
+      
+reception:
+  queue:
+    name: reception-queue
+    
+queue:
+  endpoint: https://sqs.ap-northeast-1.amazonaws.com/
+  
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    
+debug: true

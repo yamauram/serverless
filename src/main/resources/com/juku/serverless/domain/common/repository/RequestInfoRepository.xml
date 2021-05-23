@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.juku.serverless.domain.common.repository.RequestInfoRepository">
+    <insert id="create" useGeneratedKeys="true" keyProperty="receptionNumber" parameterType="com.juku.serverless.domain.common.model.RequestInfo">
+        INSERT INTO request_info (
+          request_file_path,
+          status,
+          reception_time)
+        values(
+          #{requestFilePath},
+          #{status},
+          #{receptionTime}
+        )
+    </insert>
+</mapper>
