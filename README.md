@@ -1,0 +1,2 @@
+# serverless
+AWSでのサーバレスAPIの検証のため、Spring Cloud Functionを使用したLambda関数用のアプリケーションを実装。
