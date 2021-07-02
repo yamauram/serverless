@@ -1,2 +1,2 @@
-# graalvm
-* サーバレスAPIアプリケーションをGraalVMでビルドするためのプロジェクト。
+# serverless
+* SpringCloudFunctionによるサーバレスAPIアプリケーションをビルドするためのプロジェクト。
